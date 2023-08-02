@@ -10,3 +10,9 @@
         url('assets/fonts//HelveticaNowDisplay-Regular/HelveticaNowDisplay-Regular.ttf')
             format('truetype');
 }
+
+@layer base {
+    html {
+        font-family: HelveticaNowDisplay, helvetica, system-ui, sans-serif;
+    }
+}

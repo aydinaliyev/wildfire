@@ -1,3 +1,30 @@
 .listItem {
-    @apply flex flex-row px-2.5 py-3 gap-4;
+    @apply flex flex-row px-2.5 py-3 gap-4 text-text-nonActive;
+}
+
+.listItem:hover {
+    @apply bg-comp-dark rounded-lg text-white;
+}
+.listItem:hover svg path {
+    stroke: white;
+}
+
+.listItem-container {
+    @apply flex flex-row justify-between grow align-middle;
+}
+
+.listItem-text {
+    @apply font-helvetica  text-base font-normal leading-6;
+}
+
+.listItem-info {
+    @apply flex justify-center align-middle font-helvetica bg-info-main  rounded-full px-[6px] py-[2px];
+}
+
+.headerContainer {
+    @apply flex flex-row justify-start align-middle px-[29px] py-[27px] bg-comp-main border-b border-solid border-comp-light;
+}
+
+.headerContainer-text {
+    @apply text-white  text-xl font-medium leading-6;
 }
