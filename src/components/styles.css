@@ -28,3 +28,11 @@
 .headerContainer-text {
     @apply text-white  text-xl font-medium leading-6;
 }
+
+.reportsHeader-text-main {
+    @apply text-white text-[28px] font-medium leading-10;
+}
+
+.reportsHeader-text-secondary {
+    @apply text-text-secondary font-jakartaSans text-xs leading-5 font-normal;
+}

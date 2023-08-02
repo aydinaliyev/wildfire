@@ -5,6 +5,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 helvetica: ['HelveticaNowDisplay', 'helvetica'],
+                jakartaSans: ['Plus Jakarta Sans'],
+                manrope: ['Manrope'],
             },
             colors: {
                 comp: {
@@ -14,10 +16,14 @@ module.exports = {
                 },
                 text: {
                     nonActive: '#706E86',
+                    secondary: '#7C77B0',
                 },
                 info: {
                     main: '#F84233',
                 },
+            },
+            boxShadow: {
+                button: '0px 1px 2px 0px rgba(24, 24, 28, 0.04), 0px 3px 4px -5px rgba(24, 24, 28, 0.03)',
             },
         },
     },

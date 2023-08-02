@@ -8,7 +8,7 @@ function App() {
         <Routes>
             <Route element={<Layout />}>
                 <Route path="/" element={<Reports />} />
-                <Route path="/" element={<Reports />} />
+                <Route path="/reports" element={<Reports />} />
                 {/* <Route path="/" element={<Main />} />
             <Route path="assignments" element={<InferCabularyAssignments />} /> */}
             </Route>
