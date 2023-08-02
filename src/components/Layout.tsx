@@ -5,7 +5,7 @@ import Header from './Header'
 
 const Layout = () => {
     return (
-        <main className="w-screen h-screen flex ">
+        <main className="w-screen h-screen flex max-w-full">
             <SideBar />
             <section id="content" className="flex flex-col grow ">
                 <Header />

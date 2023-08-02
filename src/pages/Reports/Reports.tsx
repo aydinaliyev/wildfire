@@ -1,8 +1,30 @@
-import MainContainer from 'components/MainContainer'
+import { useState } from 'react'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
+import Box from '@mui/material/Box'
 import AddIcon from '@mui/icons-material/Add'
+
+import MainContainer from 'components/MainContainer'
 import Button from 'components/Button'
+import TabPanel from 'components/TabPanel'
+import { tabLabels } from 'helpers/Constants'
+
+import './style.css'
+import All from './Tabs/All'
 
 const Reports = () => {
+    const [value, setValue] = useState(0)
+
+    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+        setValue(newValue)
+    }
+
+    const a11yProps = (index: number) => {
+        return {
+            id: `simple-tab-${index}`,
+            'aria-controls': `simple-tabpanel-${index}`,
+        }
+    }
     return (
         <MainContainer>
             <div className="flex flex-row justify-between pl-[30px] pt-[27px] pb-[30px] pr-[28px]">
@@ -25,6 +47,31 @@ const Reports = () => {
                     />
                 </div>
             </div>
+            <Box sx={{ borderBottom: 1, borderColor: '#312D5B' }}>
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="basic tabs example"
+                    className="ml-[21px]"
+                >
+                    {tabLabels.map((item, index) => (
+                        <Tab
+                            label={item}
+                            {...a11yProps(index)}
+                            className="p-0"
+                        />
+                    ))}
+                </Tabs>
+            </Box>
+            <TabPanel value={value} index={0}>
+                <All />
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+                Item Two
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+                Item Three
+            </TabPanel>
         </MainContainer>
     )
 }

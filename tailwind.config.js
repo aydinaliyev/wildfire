@@ -17,6 +17,8 @@ module.exports = {
                 text: {
                     nonActive: '#706E86',
                     secondary: '#7C77B0',
+                    active: '#6557FF',
+                    placeholder: '#84818A',
                 },
                 info: {
                     main: '#F84233',

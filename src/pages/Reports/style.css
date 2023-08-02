@@ -1,0 +1,14 @@
+button.MuiTab-root {
+    @apply w-fit px-0 !important;
+}
+.MuiTab-root {
+    @apply text-text-secondary font-helvetica text-base font-normal leading-[22px] normal-case p-0 mr-4 min-w-0 !important;
+}
+
+.MuiTabs-indicator {
+    @apply border-[#6557FF] rounded-t-sm border-2 !important;
+}
+
+.Mui-selected {
+    @apply text-[#6557FF] w-fit !important;
+}

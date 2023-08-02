@@ -1,0 +1,15 @@
+.MuiTableContainer-root {
+    @apply border rounded-xl border-comp-light !important;
+}
+
+.MuiTableCell-root {
+    @apply p-0 border-0 !important;
+}
+
+.tableHeader-text {
+    @apply text-text-secondary font-helvetica text-sm font-medium leading-[22px];
+}
+
+.tableBody-text {
+    @apply text-white font-helvetica text-base font-normal leading-6;
+}
