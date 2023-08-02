@@ -2,10 +2,12 @@
     @apply flex flex-row px-2.5 py-3 gap-4 text-text-nonActive;
 }
 
-.listItem:hover {
+.listItem:hover,
+.listItem-active {
     @apply bg-comp-dark rounded-lg text-white;
 }
-.listItem:hover svg path {
+.listItem:hover,
+.listItem-active svg path {
     stroke: white;
 }
 
@@ -18,7 +20,7 @@
 }
 
 .listItem-info {
-    @apply flex justify-center align-middle font-helvetica bg-info-main  rounded-full px-[6px] py-[2px];
+    @apply flex justify-center align-middle font-helvetica bg-info-main  rounded-full w-6 h-6;
 }
 
 .headerContainer {

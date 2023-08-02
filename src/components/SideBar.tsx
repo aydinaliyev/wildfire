@@ -5,7 +5,7 @@ const SideBar = () => {
     return (
         <section
             id="sideBar"
-            className="flex flex-col w-[18.75vw] min-w-[270] bg-comp-main shrink-0 border-r border-solid border-comp-light px-2.5 py-[17px] gap-[30px] justify-start items-center"
+            className="flex flex-col w-[18.75vw] min-w-[270px] bg-comp-main shrink-0 border-r border-solid border-comp-light px-2.5 py-[17px] gap-[30px] justify-start items-center"
         >
             <Logo />
             <SideBarMenu />
